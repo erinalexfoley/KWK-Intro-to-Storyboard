@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,43 +12,101 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KWK__1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to my app!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-L8-bbB">
-                                <rect key="frame" x="73.5" y="101" width="228" height="32"/>
-                                <color key="backgroundColor" red="0.95774381860000002" green="0.86731939130000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sun.max" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7dd-ah-eic">
-                                <rect key="frame" x="59" y="161" width="248" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95774381860000002" green="0.86731939130000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTk-Gs-ajB">
-                                <rect key="frame" x="154.5" y="597" width="66" height="30"/>
-                                <color key="backgroundColor" red="0.95774381860000002" green="0.86731939130000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Enter app">
-                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="whaddup im learning swift.. again " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6GT-0p-W9S">
-                                <rect key="frame" x="59" y="538" width="248" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="what's your aesthetic?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6GT-0p-W9S">
+                                <rect key="frame" x="120.5" y="660" width="173" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTk-Gs-ajB">
+                                <rect key="frame" x="152" y="733" width="110" height="30"/>
+                                <color key="backgroundColor" red="0.95774381860000002" green="0.86731939130000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="get some inspo!">
+                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Zh-1R-fK0"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VM-kE-wam">
+                                <rect key="frame" x="0.0" y="105" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="seH-RX-PKR"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.95774381860000002" green="0.86731939130000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="S T A Y   A W H I L E" id="sMa-U6-kmz">
+                                        <barButtonItem key="leftBarButtonItem" image="magnifyingglass" catalog="system" style="plain" id="rWQ-gg-3dJ">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3g3-qd-tpl">
+                                                <rect key="frame" x="20" y="11" width="80" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                <state key="normal" title="explore" image="magnifyingglass" catalog="system"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-qt-2gk">
+                                <rect key="frame" x="0.0" y="852" width="414" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="TD2-jW-7aa"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" image="camera.fill" catalog="system" id="0Pi-Xm-DEo">
+                                        <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6507" translatesAutoresizingMaskIntoConstraints="NO" id="7dd-ah-eic">
+                                <rect key="frame" x="83" y="178" width="248" height="440"/>
+                                <color key="backgroundColor" red="0.95774381860000002" green="0.86731939130000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="qHP-Ai-gOH"/>
+                                    <constraint firstAttribute="height" constant="440" id="soI-64-ujf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="erin's dreamworld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iJ-ns-f9t">
+                                <rect key="frame" x="139" y="60" width="136" height="21"/>
+                                <color key="backgroundColor" red="0.95774381860000002" green="0.86731939130000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="5VM-kE-wam" firstAttribute="top" secondItem="1iJ-ns-f9t" secondAttribute="bottom" constant="24" id="02l-Mw-FSW"/>
                             <constraint firstItem="6GT-0p-W9S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1q5-eQ-U2N"/>
-                            <constraint firstItem="k4H-L8-bbB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BF8-a0-uId"/>
+                            <constraint firstItem="xTk-Gs-ajB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xq-8W-i0p"/>
+                            <constraint firstItem="5VM-kE-wam" firstAttribute="top" secondItem="1iJ-ns-f9t" secondAttribute="bottom" constant="24" id="4IB-Fb-UoI"/>
+                            <constraint firstItem="5VM-kE-wam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7tZ-4u-eqa"/>
+                            <constraint firstItem="7dd-ah-eic" firstAttribute="top" secondItem="5VM-kE-wam" secondAttribute="bottom" constant="29" id="AEt-2F-Z7A"/>
+                            <constraint firstItem="1iJ-ns-f9t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Brf-JT-3C9"/>
+                            <constraint firstItem="6GT-0p-W9S" firstAttribute="top" secondItem="7dd-ah-eic" secondAttribute="bottom" constant="42" id="Gel-qY-ecY"/>
+                            <constraint firstItem="xTk-Gs-ajB" firstAttribute="top" secondItem="6GT-0p-W9S" secondAttribute="bottom" constant="39" id="KyR-XM-nOc"/>
+                            <constraint firstItem="xTk-Gs-ajB" firstAttribute="top" secondItem="6GT-0p-W9S" secondAttribute="bottom" constant="39" id="Odn-ax-572"/>
+                            <constraint firstItem="6GT-0p-W9S" firstAttribute="top" secondItem="7dd-ah-eic" secondAttribute="bottom" constant="42" id="YQx-kv-bZY"/>
+                            <constraint firstItem="7dd-ah-eic" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kqi-h5-sBy"/>
                             <constraint firstItem="xTk-Gs-ajB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lyY-X0-VkU"/>
+                            <constraint firstItem="1iJ-ns-f9t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o16-wG-8DF"/>
+                            <constraint firstItem="fYh-qt-2gk" firstAttribute="top" secondItem="xTk-Gs-ajB" secondAttribute="bottom" constant="89" id="oi6-VE-IWH"/>
+                            <constraint firstItem="7dd-ah-eic" firstAttribute="top" secondItem="5VM-kE-wam" secondAttribute="bottom" constant="29" id="rQQ-cX-PM3"/>
+                            <constraint firstItem="fYh-qt-2gk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s9S-yr-9aW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="appTitle" destination="1iJ-ns-f9t" id="aLn-4Q-yxX"/>
+                        <outlet property="textfield" destination="6GT-0p-W9S" id="s3H-o3-Bnz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,6 +114,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sun.max" catalog="system" width="64" height="62"/>
+        <image name="IMG_6507" width="564" height="1008"/>
+        <image name="camera.fill" catalog="system" width="64" height="48"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
 </document>
